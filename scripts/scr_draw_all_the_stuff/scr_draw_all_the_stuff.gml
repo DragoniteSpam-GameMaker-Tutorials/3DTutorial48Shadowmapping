@@ -1,8 +1,5 @@
 function scr_draw_all_the_stuff() {
     gpu_set_tex_repeat(true);
-    shader_set(shd_basic_3d_stuff);
-    
-    shader_set_uniform_f(shader_get_uniform(shd_basic_3d_stuff, "lightDirection"), sun_dx, sun_dy, sun_dz);
     
     // Everything must be drawn after the 3D projection has been set
     vertex_submit(ground, pr_trianglelist, sprite_get_texture(spr_grass, 0));
