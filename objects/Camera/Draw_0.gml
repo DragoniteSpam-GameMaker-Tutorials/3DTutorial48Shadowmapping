@@ -5,13 +5,21 @@ draw_clear(c_black);
 // 3D projections require a view and projection matrix
 var camera = camera_get_active();
 var camera_distance = 160;
-
+/*
 var xfrom = Player.x;
 var yfrom = Player.y;
 var zfrom = Player.z + 64;
 var xto = xfrom - camera_distance * dcos(Player.look_dir) * dcos(Player.look_pitch);
 var yto = yfrom + camera_distance * dsin(Player.look_dir) * dcos(Player.look_pitch);
 var zto = zfrom + camera_distance * dsin(Player.look_pitch);
+*/
+
+var xfrom = sun_x;
+var yfrom = sun_y;
+var zfrom = sun_z;
+var xto = sun_x + sun_dx;
+var yto = sun_y + sun_dy;
+var zto = sun_z + sun_dz;
 
 // You need to do this AFTER setting the surface target,
 // otherwise the camera will be in the wrong place
