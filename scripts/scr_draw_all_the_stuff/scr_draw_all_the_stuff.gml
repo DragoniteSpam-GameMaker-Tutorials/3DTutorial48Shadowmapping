@@ -25,6 +25,10 @@ function scr_draw_all_the_stuff() {
     matrix_set(matrix_world, matrix_build(sun_x, sun_y, sun_z, 0, 0, 0, 1, 1, 1));
     vertex_submit(vb_sphere, pr_trianglelist, -1);
     
+    // the "player"
+    matrix_set(matrix_world, matrix_build(Player.x, Player.y, Player.z, 0, 0, 0, 1, 1, 1));
+    vertex_submit(vb_trees[0], pr_trianglelist, -1);
+    
     matrix_set(matrix_world, matrix_build_identity());
     
     shader_reset();
