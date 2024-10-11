@@ -1,11 +1,12 @@
 {
-  "type": 1,
-  "parent": {
-    "name": "3DTutorial48Shadowmapping",
-    "path": "3DTutorial48Shadowmapping.yyp",
+  "$GMShader":"",
+  "%Name":"shd_depth",
+  "name":"shd_depth",
+  "parent":{
+    "name":"3DTutorial48Shadowmapping",
+    "path":"3DTutorial48Shadowmapping.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "shd_depth",
-  "tags": [],
-  "resourceType": "GMShader",
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }
